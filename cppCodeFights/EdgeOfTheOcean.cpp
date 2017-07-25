@@ -1,6 +1,6 @@
 #include "stdafx.h"
 #include "EdgeOfTheOcean.h"
-
+#include <math.h>
 
 EdgeOfTheOcean::EdgeOfTheOcean()
 {
@@ -20,4 +20,9 @@ int EdgeOfTheOcean::adjacentElementsProduct(std::vector<int> ia)
 			m = p;
 	}
 	return m;
+}
+
+int EdgeOfTheOcean::shapeArea(int n) 
+{
+	return (n == 1) ? 1 : pow(n, 2) + pow(n - 1, 2);
 }

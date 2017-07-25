@@ -41,5 +41,29 @@ namespace cppCodeFights
 			Assert::AreEqual(expectedTest4Result, test4Result);
 			Logger::WriteMessage("Test 4 " + (expectedTest4Result == test4Result));
 		}
+		/// Below we will define an n-interesting polygon. 
+		/// Your task is to find the area of a polygon for a given n.
+		/// A 1-interesting polygon is just a square with a side of length 1. 
+		/// An n-interesting polygon is obtained by taking the n - 1-interesting polygon 
+		/// and appending 1-interesting polygons to its rim, side by side.
+		TEST_METHOD(shapeArea) 
+		{
+			int test1 = 2;
+			int expected1 = 5;
+			int test1Result = Ocean.shapeArea(test1);
+			Assert::AreEqual(expected1, test1Result);
+			int test2 = 3;
+			int expected2 = 13;
+			int test2Result = Ocean.shapeArea(test2);
+			Assert::AreEqual(expected2, test2Result);
+			int test3 = 1;
+			int expected3 = 1;
+			int test3Result = Ocean.shapeArea(test3);
+			Assert::AreEqual(expected3, test3Result);
+			int test4 = 5;
+			int expected4 = 41;
+			int test4Result = Ocean.shapeArea(test4);
+			Assert::AreEqual(expected4, test4Result);
+		}
 	};
 }
