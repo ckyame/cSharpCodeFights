@@ -10,7 +10,9 @@ namespace cSharpCodeFights.EdgeOfTheOcean
     {
         public int adjacentElementsProduct(int[] inputArray)
         {
-            int a = inputArray[0], b = inputArray[1], c = inputArray[0] * inputArray[1];
+            int a = inputArray[0], 
+                b = inputArray[1], 
+                c = inputArray[0] * inputArray[1];
             for (int i = 0; i < inputArray.Length - 1; i++)
             {
                 if (c <= inputArray[i] * inputArray[i + 1])

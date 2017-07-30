@@ -83,6 +83,8 @@
     <Import Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EdgeOfTheOcean\EdgeOfTheOcean.vb" />
+    <Compile Include="EdgeOfTheOcean\EdgeOfTheOceanTests.vb" />
     <Compile Include="TheJourneyBegins\TheJourneyBeginsTests.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
