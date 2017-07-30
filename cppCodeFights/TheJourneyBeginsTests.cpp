@@ -26,7 +26,6 @@ namespace cppCodeFights
 			int test3Param1 = 1, test3Param2 = 0, test3Expected = 1;
 			int test3Result = Journey.add(test3Param1, test3Param2);
 			Assert::AreEqual(test3Expected, test3Result);
-
 		}
 		/// Given a year, return the century it is in. The first century spans from the year 1 up to and including the year 100, the second - from the year 101 up to and including the year 200, etc.
 		/// Example
